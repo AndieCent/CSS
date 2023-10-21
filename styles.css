@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+    
+header {
+    background-color: #009688;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.wrap {
+    display: flex;
+    background-color: #4caf50 ;
+}
+
+.row {
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+    flex: 1;
+}
+    
+.content {
+    flex: 1; /* Equal width for all columns */
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+   
+}
+
+aside {
+   float: right;
+   margin: 0 1.5%;
+   width: 30%;
+   border: 1px solid #ccc;
+   background-color: #f9f9f9;
+   padding: 20px;
+   margin: 20px;
+}
+
+.typography-example p {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+}
+    /* Task 2: Text Alignment and Line Height */
+.typography-example p {
+    text-align: left;
+    line-height: 1.6;
+}
+
+.info {
+    border: 2px solid #4caf50;
+    padding: 10px;
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+footer {
+    background-color: #009688;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
